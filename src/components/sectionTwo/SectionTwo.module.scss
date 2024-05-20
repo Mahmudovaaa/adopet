@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secTwo {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    .secTop {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+
+        .twoImg {
+            width: 70%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+         width: 70%;
+            font-size: 18px;
+            color: gray;
+        }
+
+        button {
+            display: flex;
+            width: 150px;
+            height: 45px;
+            background-color: transparent;
+            border: 2px solid rgb(194, 68, 68);
+            align-items: center;
+            color: rgb(194, 68, 68);
+            justify-content: center;
+            font-size: 15px;
+        }
+    }
+
+    .secBottom {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        h2{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38px;
+        }
+        .select{
+            width: 70%;
+            height: 45px;
+            border: 1px solid gray;
+        }
+    }
+}
+
+@media screen and (max-width:6856px) {
+    .secTwo{
+        display: flex;
+        gap: 20px;
+        .secTop{
+            width: 90%;
+          
+            p{
+                width: 90%;
+            }
+        }
+        .secBottom{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    .secTwo{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        .secTop{
+            width: 90%;
+            .twoImg {
+                width: 70%;
+                margin: 15px;
+    
+                img {
+                    width: 100%;
+                }
+            }
+            p{
+                width: 80%;
+            }
+        }
+        .secBottom{
+            width: 90%;
+        }
+    }
+}

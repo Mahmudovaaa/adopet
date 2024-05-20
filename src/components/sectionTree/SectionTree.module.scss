@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secTree {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 80%;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .featured {
+            display: flex;
+          h1{
+            font-weight: 500;
+          }
+            
+        }
+
+        .sectionImage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .treeImg {
+                width: 40%;
+                display: flex;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .secTree{
+        .container{
+            .sectionImage{
+                width: 50%;
+               .treeImg{
+                width: 50%;
+               }
+            }
+        }
+    }
+}
